@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bussula" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/applicationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="where am i"
+                android:textColor="#ffffffff"
+                android:textSize="68sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:weightSum="7"
+        android:background="#ffcbb57b"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/distanceText"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="you are"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="55sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/distanceInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="10"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="200sp"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/distanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="meters"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="55sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="5"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:src="@drawable/left"
+                android:id="@+id/imageViewLeft"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/bearingInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="home"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="55sp"
+                android:layout_weight="3"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:src="@drawable/right"
+                android:id="@+id/imageViewRight"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
